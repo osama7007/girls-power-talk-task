@@ -1,13 +1,43 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Roboto Condensed', sans-serif,
     monospace;
+}
+.overlay{
+  position: relative;
+}
+.overlay::before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  content: "";
+  background: black;
+  opacity: .4;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar {
+    @apply text-3xl cursor-pointer fixed right-4 top-4;
+  }
+  .link_hover {
+    @apply  hover:text-dim-red hover:animate-pulse transition;
+  }
+  .navLink {
+    @apply link_hover hover:scale-110 transition duration-700 font-bold text-white;
+  }
 }
