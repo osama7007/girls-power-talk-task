@@ -14,7 +14,7 @@ const Navbar = () => {
      return (
     <div>
         <nav className="fixed top-0 flex justify-between items-center p-6 bg-gray-900 opacity-90 z-50" >
-            <div className="w-1/5 h-1/5 cursor-pointer">
+            <div className="lg:w-1/5 w-1/2  h-1/5 cursor-pointer">
                 <HashLink to='#header'><img src={logo} alt="logo" className="w-full"/></HashLink>
             </div>
             <div className="pr-10 hidden lg:block">
