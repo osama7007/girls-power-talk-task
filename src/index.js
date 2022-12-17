@@ -13,13 +13,6 @@ const router = createBrowserRouter([
     path: "/",
     element:<App/>,
     errorElement: <h2>Not found page</h2>,
-    children:[
-      {
-        path: "/contact",
-        element:<Contacts/>,
-      }
-    ]
-
   },
 ]);
 

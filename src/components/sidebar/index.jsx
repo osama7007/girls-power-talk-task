@@ -20,7 +20,7 @@ const Sidebar = () => {
   return (
     <div className={`${style.menu} transition duration-500 icon block lg:hidden w-1/4 h-screen text-white p-4 fixed top-0 right-0 z-50`} >
            {
-               !icon ? <RiMenuFoldLine className='sidebar hover:text-dim-gray transition text-dim-red' onClick={()=>addClass()}/>
+               !icon ? <RiMenuFoldLine className='sidebar hover:text-dim-gray translate-y-3 transition text-dim-red' onClick={()=>addClass()}/>
                  : <AiOutlineClose className='sidebar  hover:text-dim-red transition text-white' onClick={()=>addClass()}/>
         } 
         {
